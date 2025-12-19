@@ -1,4 +1,4 @@
-package com.vishal.authentication_app.service;
+package com.vishal.authentication_app.service.impl;
 
 import com.vishal.authentication_app.dto.UserDto;
 import com.vishal.authentication_app.entities.Provider;
@@ -6,6 +6,7 @@ import com.vishal.authentication_app.entities.User;
 import com.vishal.authentication_app.exceptions.ResourceNotFoundException;
 import com.vishal.authentication_app.helpers.UserHelper;
 import com.vishal.authentication_app.repositories.UserRepository;
+import com.vishal.authentication_app.service.UserService;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
@@ -16,7 +17,7 @@ import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
     private final ModelMapper modelMapper;

@@ -1,4 +1,4 @@
-package com.vishal.auth_app.exceptions;
+package com.vishal.authentication_app.exceptions;
 
 
 public class ResourceNotFoundException extends RuntimeException{
