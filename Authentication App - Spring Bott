@@ -1,2 +1,0 @@
-A complete authentication system built using Spring Boot on the backend.
-Supports JWT-based authentication with username/password login, as well as Google and GitHub OAuth2 login.
